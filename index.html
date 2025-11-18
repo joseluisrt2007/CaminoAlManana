@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camino al Mañana | Asociación Civil</title>
+    <meta name="description" content="Asociación civil que apoya a jóvenes en Calpulalpan, Sanctorum, Nanacamilpa, Benito Juárez y Apan.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #003087;
+            --whatsapp: #25D366;
+            --bg-light: #f5f7fa;     /* nuevo color de fondo gris claro */
+            --card-bg: #ffffff;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            font-family:'Inter',sans-serif;
+            color:#2d3748;
+            background:#f5f7fa;      /* ← fondo gris claro */
+            min-height:100vh;
+        }
+        img{max-width:100%;display:block;}
+        .container{max-width:1200px;margin:0 auto;padding:0 2rem;}
+
+        header{
+            position:fixed;top:0;width:100%;
+            background:rgba(255,255,255,0.95);
+            backdrop-filter:blur(12px);
+            box-shadow:0 4px 20px rgba(0,0,0,0.06);
+            z-index:1000;padding:1.2rem 0;
+        }
+        .navbar{display:flex;justify-content:center;align-items:center;}
+        .logo{display:flex;align-items:center;gap:14px;font-size:1.7rem;font-weight:800;color:var(--primary);}
+        .logo img{height:60px;}
+
+        .hero{
+            padding:180px 0 140px;
+            background:linear-gradient(135deg, #eef2f8 0%, #dfe8f5 100%);
+            text-align:center;
+        }
+        .hero-logo{width:340px;margin:0 auto 35px;animation:float 6s ease-in-out infinite;}
+        .hero h1{font-size:3.6rem;font-weight:800;color:var(--primary);margin-bottom:20px;}
+        .hero p{font-size:1.45rem;max-width:920px;margin:0 auto 50px;color:#444;}
+
+        .hero-buttons{display:flex;gap:25px;justify-content:center;flex-wrap:wrap;}
+        .btn-facebook,.btn-whatsapp{
+            display:inline-flex;align-items:center;gap:12px;padding:18px 40px;border-radius:50px;
+            font-weight:600;font-size:1.2rem;transition:all .3s;box-shadow:0 8px 25px rgba(0,0,0,0.12);
+        }
+        .btn-facebook{background:#1877F2;color:white;}
+        .btn-facebook:hover{background:#166fe5;transform:translateY(-5px);}
+        .btn-whatsapp{background:var(--whatsapp);color:white;}
+        .btn-whatsapp:hover{background:#128C7E;transform:translateY(-5px);}
+
+        .municipios{padding:140px 0;background:var(--card-bg);text-align:center;}
+        .section-title{font-size:2.8rem;font-weight:700;color:var(--primary);margin-bottom:70px;}
+        .municipios-list{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+            gap:30px;
+            max-width:1000px;
+            margin:0 auto;
+        }
+        .municipio-card{
+            background:white;padding:40px 20px;border-radius:20px;
+            box-shadow:0 15px 40px rgba(0,0,0,0.08);
+            transition:transform .4s;
+        }
+        .municipio-card:hover{transform:translateY(-12px);}
+        .municipio-card h3{font-size:1.8rem;color:var(--primary);margin-bottom:8px;}
+        .municipio-card p{font-size:1.1rem;color:#666;}
+
+        footer{background:var(--primary);color:white;text-align:center;padding:70px 20px 50px;}
+        .footer-social a{font-size:2.8rem;margin:0 35px;color:white;transition:.3s;}
+        .footer-social a:hover{transform:translateY(-8px);}
+        .footer-social a:nth-child(1):hover{color:#1877F2;}
+        .footer-social a:nth-child(2):hover{color:var(--whatsapp);}
+
+        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+        @media(max-width:768px){
+            .hero{padding:140px 0 100px;}.hero h1{font-size:2.8rem;}
+            .hero-logo{width:260px;}
+            .hero-buttons{gap:15px;}
+            .btn-facebook,.btn-whatsapp{padding:16px 32px;font-size:1.1rem;}
+            .section-title{font-size:2.4rem;}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Camino al Mañana">
+                <span>Camino al Mañana</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="logo.jpg" alt="Camino al Mañana" class="hero-logo">
+            <h1>Camino al Mañana</h1>
+            <p>Camino al Mañana es una asociación civil formada con el propósito de ayudar a los jóvenes a desarrollar proyectos sociales y mejorar sus oportunidades educativas.</p>
+
+            <div class="hero-buttons">
+                <a href="https://www.facebook.com/share/1A1MtSLbgL/" target="_blank" class="btn-facebook">
+                    <i class="fab fa-facebook-f"></i> Síguenos en Facebook
+                </a>
+                <a href="https://wa.me/+527491079060" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="municipios">
+        <div class="container">
+            <h2 class="section-title">Trabajamos en</h2>
+            <div class="municipios-list">
+                <div class="municipio-card"><h3>Calpulalpan</h3><p>Tlaxcala</p></div>
+                <div class="municipio-card"><h3>Sanctorum</h3><p>Tlaxcala</p></div>
+                <div class="municipio-card"><h3>Nanacamilpa</h3><p>Tlaxcala</p></div>
+                <div class="municipio-card"><h3>Benito Juárez</h3><p>Tlaxcala</p></div>
+                <div class="municipio-card"><h3>Apan</h3><p>Hidalgo</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="font-size:1.15rem;margin-bottom:25px;">Camino al Mañana • Asociación Civil</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/share/1A1MtSLbgL/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/+527491079060" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p style="margin-top:35px;font-size:0.95rem;opacity:0.9;">
+                © 2025 Camino al Mañana • Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
